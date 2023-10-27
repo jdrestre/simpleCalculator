@@ -1,3 +1,5 @@
+import math
+
 # Pedir al usuario que ingrese el primer número
 num1 = float(input("Ingrese el primer número: "))
 
@@ -10,7 +12,8 @@ print("1. Suma")
 print("2. Resta")
 print("3. Multiplicación")
 print("4. División")
-operacion = int(input("Ingrese su elección (1/2/3/4): "))
+print("5. Raíz cuadrada")
+operacion = int(input("Ingrese su elección (1/2/3/4/5): "))
 
 # Realizar la operación matemática seleccionada
 if operacion == 1:
@@ -21,6 +24,8 @@ elif operacion == 3:
     resultado = num1 * num2
 elif operacion == 4:
     resultado = num1 / num2
+elif operacion == 5:
+    resultado = math.sqrt(num1)
 else:
     print("Elección inválida")
     resultado = None
